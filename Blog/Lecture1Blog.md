@@ -1,5 +1,8 @@
 # Lecture 1: Getting Started
 
+[Link to Chapter from Fast.ai Book](https://colab.research.google.com/github/fastai/fastbook/blob/master/01_intro.ipynb)
+[Link to Lesson](https://course.fast.ai/Lessons/lesson1.html)
+[Link to Lecture on YouTube](https://youtu.be/8SF_h3xF3cE)
 
 I have just discovered this online course material from [Fast.ai](https://course.fast.ai/) and the corresponding [book](https://course.fast.ai/Resources/book.html) that goes along with it! I am not super familiar with Fast AI yet, but from what I understand it’s essentially an API built on top of PyTorch. I stumbled upon this course while looking for material to learn more about AI development and so far this looks like one of the best resources I’ve come across. The course specifically focuses on the aspect of writing code for Machine Learning and is very practical. I have decided to document my progress through this course, as I have found explaining/teaching something is the best way for to understand something at a deeper level. So, that’s what I’ll be doing in this blog series. I also have not flexed my writing muscles in some time, so this will serve as some much needed practice for me!
 
