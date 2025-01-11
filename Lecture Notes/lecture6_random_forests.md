@@ -13,3 +13,15 @@ One way to create a bunch of uncorrelated models is to train each of them on a d
 Only train on a random subset of data in each tree. Say random 75% of training data each tree. Each tree will re-calculate the 75% random split to ensure they each are trained on different data.
 
 Out-of-Bag Error (OOB) - Way of measuring prediction error on the training set by only including the calculation of a row's error trees where that row was NOT included in training. This allows us to see whether the model is overfitting, without needing a separate validation set.
+
+## Chapter 9 - Tabular Data Notes:
+
+(Chpater 9 Fast.ai Book)[https://github.com/fastai/fastbook/blob/master/09_tabular.ipynb]
+
+Tabular modeling objective is to predict value in one col based on the values in other cols.
+
+* can feed cols that contain categories into a model that expects numbers by using embeddings
+    * one hot encoding?
+
+Entity embedding is different than one-hot encoding...
+
