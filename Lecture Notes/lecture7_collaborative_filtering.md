@@ -106,3 +106,15 @@ By penalizing large weights, regularization encourages the model to distribute i
 
 Large weights also amplify gradients during backpropagation, leading to instability in training (exploding gradients problem).
 
+#### What does * do in this code?
+
+```python
+def create_params(size):
+    return nn.Parameter(torch.zeros(*size).normal_(0, 0.01))
+```
+
+Here, the * is the unpacking operator. In this context, it unpacks the elements of the iterable `size` (e.g. tuple) so that they are passed as separate positional args to the `torch.zeros()` function.
+
+This might be more clear or obvious if we used typing and declared the expected type of the size parameter.
+
+This is not to be confused with the pointer dereference operator in C++! Python does not have pointers.
