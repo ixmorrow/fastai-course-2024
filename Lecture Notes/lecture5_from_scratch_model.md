@@ -6,7 +6,7 @@ Looking at creating a neural network from scratch using Python and PyTorch.
 
 Based partly on chapters 4 and 9 of the book.
 
-Working through the (Linear Model and Neural Net from Scratch notebook)[https://www.kaggle.com/code/jhoward/linear-model-and-neural-net-from-scratch]
+Working through the [Linear Model and Neural Net from Scratch notebook](https://www.kaggle.com/code/jhoward/linear-model-and-neural-net-from-scratch])
 
 With pytorch, a rank 2 tensor (matrix) multiplied by a rank 1 tensor (vector) broadcasts the vector to match the dimensions of the matrix. Allowing for the element-wise multiplication of the vector across each row of the matrix.
 
@@ -25,9 +25,9 @@ loss.backward()
 coeffs.grad
 ```
 
-(Why you should use a framework)[https://www.kaggle.com/code/jhoward/why-you-should-use-a-framework]
+[Why you should use a framework](https://www.kaggle.com/code/jhoward/why-you-should-use-a-framework)
 
-(How Random Forests really work)[https://www.kaggle.com/code/jhoward/how-random-forests-really-work/]
+[How Random Forests really work](https://www.kaggle.com/code/jhoward/how-random-forests-really-work/)
 
 A random forest is an ensemble of trees. A tree is an ensemble of binary splits.
 
