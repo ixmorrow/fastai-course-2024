@@ -205,6 +205,21 @@ In machine learning models (like neural networks or embeddings):
 	•	Inputs (like user/item IDs, images, or words) are transformed into vectors in the latent space.
 	•	These vectors encode meaningful relationships or properties of the inputs in a way that facilitates the model’s tasks, like prediction or classification.
 
+
+## Lecture 7 Video Notes
+
+K-fold cross validation - split data into equal 5 sets. Train on k-1 sets of data, use the remaining 1 set for validation set. Then repeat and rotate through all k folds so that each one is used as a validation set once. Accumulate the eval metrics from each fold and average them.
+* uses entire training set for both training and validation unlike a normal train/val split
+
+Goal: Want to try to create the latent factor vectors for each user and movie through training. At beginning, we don't know what the value/score each user/movie should have, that needs to be learned.
+
+Latent Factors -> "I don't know what things about movies matter to people, but there is probably some things. And let's just try using SGD to find them." - Jeremy Howard
+
+Embedding is just looking something up in an array.
+* You can think of an embedding as being a computational shortcut to multiplying by a one-hot-encoded vector.
+
+Number of columns in the embedding matrix is whatever we want, however many factors we want to create!
+
 ## Questions
 
 1. What problem does collaborative filtering solve?
