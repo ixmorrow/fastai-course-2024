@@ -74,3 +74,27 @@ batch norm is used to improve training efficiency and performance.
 Models with batchnorm layers tend to generalize better than models that don't contain them. 
 * Each mini-batch will have a somewhat different mean and standard deviation than other mini-batches. Therefore, the activations will be normalized by different values each time.
 * In order for the model to make accurate predictions, it will have to learn to become robust to these variations. In general, adding additional randomization to the training process often helps.
+
+### Lecture Video Notes
+
+Why does the filter in used in the example in the notebook and lecture find "horizontal edges"?
+* Because of the way Jeremy defined the values in the kernel that was used
+[[1, 1, 1],
+[0, 0, 0],
+[-1, -1, -1]]
+* when this convolves over the image, they perform a dot product with 9 pixels on the image. Where each pixel is a value representing the amount of color in each pixel. Think of black and white photos only for now. Higher value pixels mean darker/more color in that pixel  whereas a pixel with little or no color will have a very low value.
+* Think of where at in the image would result in this dot product having the highest number. The answer is when the kernel is near a horixontal edge of some figure. 
+
+Max Pooling - same concept of convolving a kernel over data, except instead of performing a dot product it just takes the maximum value over that convolution.
+
+When performing a max pool, you end up "losing" half of your activation functions.
+* purpose is to reduce the spatial dimensions (width and height) while maintaining the most important information
+* keeps the "strong" features or most important because it retains the max values
+
+"Max pooling operates on small regions (windows) of the input feature map and replaces each region with the maximum value from that region." - Chat GPT
+
+Dropout Layer - randomly drop out weights in a given layer by setting them to zero. This removes some of the features that the neural net can use to identify and learn. This forces the neural net to not rely too heavily on only a few weights in the model and helps for generalization.
+* really helpful for avoiding overfitting
+
+
+

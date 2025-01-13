@@ -220,6 +220,8 @@ Embedding is just looking something up in an array.
 
 Number of columns in the embedding matrix is whatever we want, however many factors we want to create!
 
+Used CosineSimilarity in notebook to calculate the distance in latent space between two latent factors. Cosine similarity is very similra to Euclidean distance, but it also normalizes the result.
+
 ## Questions
 
 1. What problem does collaborative filtering solve?
